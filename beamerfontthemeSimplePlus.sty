@@ -1,10 +1,18 @@
 \mode<presentation>
 
 %%%%%%%%%%%% fonts
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[bitstream-charter]{mathdesign}
+\usepackage{newtxtext}
+\usepackage[scale=1.2,varg,cmintegrals,bigdelims]{newtxmath}
+\usefonttheme[onlymath]{serif}
+\renewcommand\sfdefault{qhv}
+\usepackage{pifont}
 
 \setbeamerfont{structure}{family=\sffamily,series=\mdseries}
 
-\setbeamerfont{title}{size=\huge,series=\bfseries,parent=structure}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries,parent=structure}
 \setbeamerfont{subtitle}{size=\normalsize,parent=title}
 
 \setbeamerfont{date}{size=\scriptsize,series=\mdseries,parent=structure}
@@ -20,7 +28,7 @@
 
 \setbeamerfont{caption}{size=\footnotesize}
 \setbeamerfont{item}{parent=structure,series=\mdseries}
-\setbeamerfont{block title}{size=\large,series=\mdseries,parent={structure,block body}}
+\setbeamerfont{block title}{size=\large,series=\bfseries,parent={structure,block body}}
 
 \mode
 <all>

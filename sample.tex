@@ -1,10 +1,17 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND THEMES
 %----------------------------------------------------------------------------------------
-\documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
+\documentclass[aspectratio=1610,xcolor=dvipsnames]{beamer}
 \usetheme{SimplePlus}
 
+\usepackage{microtype}
 \usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=DarkBlue,
+	urlcolor=DarkBlue,
+	citecolor=DarkBlue
+}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 
@@ -47,7 +54,7 @@
 
 \begin{frame}{Bullet Points}
     \begin{itemize}
-        \item Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        \item Lorem ipsum dolor sit amet  $\mathcal{M}$
         \item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
         \item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
         \item Nam cursus est eget velit posuere pellentesque
@@ -87,7 +94,8 @@
         \end{enumerate}
 
         \column{.5\textwidth} % Right column and width
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
+        Lorem ipsum dolor sit amet, 
+        $\Pi_{k=1}^{\infty} E^2$ consectetur adipiscing elit. Integer lectus nisl, ultricies in feugiat rutrum, porttitor sit amet augue. Aliquam ut tortor mauris. Sed volutpat ante purus, quis accumsan dolor.
 
     \end{columns}
 \end{frame}
@@ -115,7 +123,10 @@
 
 \begin{frame}{Theorem}
     \begin{theorem}[Mass--energy equivalence]
-        $E = mc^2$
+        $E = f mc^2$
+        \begin{equation*}
+            \sum_{i=1}^n \mathbb{E}\frac{\widehat{X}}{\gamma} \rm{COV}
+        \end{equation*}
     \end{theorem}
 \end{frame}
 

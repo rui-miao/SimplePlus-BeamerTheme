@@ -10,9 +10,16 @@
 \setbeamertemplate{footline}[frame number]
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{blocks}[rounded][shadow=false]
+%\setbeamertemplate{blocks}[default]
 \setbeamertemplate{enumerate items}[default]
 
-\setbeamertemplate{frametitle}{\vspace*{0.5em}\bfseries\insertframetitle\par\vskip-6pt\hrulefill\vspace{-0.1em}}
+\setbeamertemplate{frametitle}{
+    \hspace*{-0.7em}\vspace*{0.1em}\bfseries\insertframetitle
+    \par\vskip-6pt
+    %\hrulefill
+    \noindent\makebox[\linewidth]{\rule{0.96\paperwidth}{0.4pt}}
+    \vspace{-0.1em}
+}
 
 \setbeamertemplate{title page}{
     \vspace{7em}
